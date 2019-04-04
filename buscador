@@ -1,0 +1,29 @@
+arr=[3,6,5,9,8,7,15,12,16,20]
+elementoUno=30
+elementoDos=20
+resultado=0
+#for i in range(arr.__len__()):
+    #if (arr[i]== elementoUno):
+        #resultado=i
+    #else:
+        #resultado =-1
+#print (resultado)
+def buscador (arr,ele):
+    indice=0
+    for x in (arr):
+        if (ele==x):
+            return x
+        else:
+            indice+1
+    return -1
+
+def mensaje(ele):
+    if ( ele== -1):
+        print("El elemento|Uno no se encuentra en el arreglo")
+    else:
+        print("El elementoDos se encuentra en el arreglo")
+
+resultadoDos=buscador(arr,elementoUno)
+mensaje(resultadoDos)
+resultadoUno=buscador(arr,elementoDos)
+mensaje(resultadoUno),print("En el indice:" , buscador(arr,elementoDos))
